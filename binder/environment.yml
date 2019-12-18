@@ -9,6 +9,7 @@ dependencies:
   - sympy
   - scipy
   - matplotlib>=2.0
+  - ipywidgets
   - pip
   - pip:
       - stimator
