@@ -1,2 +1,8 @@
-#exit_b{font-size: 2em;}
-#help_b{font-size: 2em;}
+#help_b  {
+     opacity: 0;
+}
+
+.rise-enabled #exit_b {
+    font-size: 1.5em;
+}
+

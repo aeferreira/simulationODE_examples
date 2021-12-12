@@ -9,6 +9,8 @@ dependencies:
   - sympy
   - scipy
   - matplotlib>=2.0
+  - pandas
+  - seaborn
   - ipywidgets
   - pip
   - pip:
