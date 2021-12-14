@@ -11,8 +11,8 @@ dependencies:
   - matplotlib>=2.0
   - pandas
   - seaborn
-  - jupyterlab_widgets
   - ipywidgets
+  - jupyter_contrib_nbextensions
   - pip
   - nodejs
   - pip:
