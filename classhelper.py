@@ -1,5 +1,6 @@
 
 import pandas as pd
+from matplotlib import pyplot as plt
 
 
 def tc2df(result):
@@ -14,3 +15,16 @@ def last_time_as_series(result):
     values = [float(v) for v in values]
     df = pd.Series(values, index=names)
     return df
+
+plt.rc('axes', xmargin=0)
+def get_styles4slides(*args):
+    stylelist = []
+    for s in args:
+        if (not s.startswith('seaborn')) or (s in plt.style.available):
+            stylelist.append(s)
+        else:
+            # insert '-v0_8-'
+            stylelist.append(s.replace('seaborn', 'seaborn-v0_8'))
+    return stylelist
+
+#print(plt.style.available)
